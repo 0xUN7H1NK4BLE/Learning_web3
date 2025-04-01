@@ -38,7 +38,7 @@ contract Fundme {
     }
 
     modifier onlyowner{
-        require(owner == msg.sender,"only the owner of this contract can do that action");
+        require(owner == msg.sender,"only the owner of this contract can do that action please ");
         _;
     }
     function withdraw() payable onlyowner public {
